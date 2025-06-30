@@ -1,0 +1,63 @@
+<html> 
+
+<!-- Mirrored from www.alergoclinic.ro/_auto/alergoclinic.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 May 2025 16:40:26 GMT -->
+<head> 
+<META NAME="GENERATOR" Content="Tourweaver"> 
+<title>AlergoClinic Virtual Tour</title> 
+</head> 
+<body> 
+<script type="text/javascript"> 
+function getBrowser() { 
+var browerInfo = navigator.userAgent.toLowerCase(); 
+var typeInfo = (browerInfo.match(/msie|firefox|chrome|safari|opera/) ||"other")[0]; 
+var pc = "pc"; 
+var prefix = ""; 
+if (browerInfo.indexOf("ipad") > 0) { 
+pc = "ipad" 
+} else if (browerInfo.indexOf("iphone") > 0 || browerInfo.indexOf("ipod") > 0) { 
+pc = "iphone" 
+} else if (browerInfo.match(/Android/i)) { 
+pc = "android" 
+} else if (browerInfo.indexOf("touch") > 0 || browerInfo.indexOf("mobile") > 0) { 
+pc = "touchMobile" 
+} 
+switch (typeInfo) { 
+case "chrome": 
+case "safari": 
+prefix = "webkit"; 
+break; 
+case "msie": 
+prefix ="ms"; 
+break; 
+case "firefox": 
+prefix = "Moz"; 
+break; 
+case "opera": 
+prefix = "O"; 
+break; 
+default: 
+prefix = "webkit"; 
+break 
+} 
+return { 
+version: (browerInfo.match(/[\s\S]+(?:rv|it|ra|ie)[\/: ]([\d.]+)/) || [])[1], 
+plat: navigator.platform.toLowerCase(), 
+type: typeInfo, 
+pc: pc, 
+prefix: prefix 
+} 
+} 
+var _url=""; 
+var isPC = getBrowser().pc; 
+if(isPC == "pc"){ 
+_url="flash/Tour_alergoclinic.html"; 
+}else{ 
+_url="html5/alergoclinic.html"; 
+} 
+window.location.href=_url; 
+</script> 
+</body> 
+
+<!-- Mirrored from www.alergoclinic.ro/_auto/alergoclinic.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 May 2025 16:40:26 GMT -->
+</html> 
+
