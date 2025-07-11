@@ -21,7 +21,15 @@
 <script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
 <!-- 100% privacy-first analytics -->
-<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<script>
+  window.sa_event = window.sa_event || function() {
+    (window.sa_event.q = window.sa_event.q || []).push(arguments);
+  };
+  window.sa_config = {
+    hostname: 'alergoclinic.ro'  // Override hostname
+  };
+</script>
 </head>
 <body>
 <div class="main">
