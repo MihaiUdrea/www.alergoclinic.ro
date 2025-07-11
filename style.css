@@ -21,7 +21,7 @@ html { padding:0; margin:0;}
 .menu {
 	padding: 43px 0 0 0;
 	margin: 0;
-	width: 460px;
+	width: 500px;
 	float: right;
 }
 .menu ul { text-align:right;  padding:0; margin:0; list-style:none; border:0; float:right;}
@@ -46,9 +46,11 @@ html { padding:0; margin:0;}
 	font: normal 12px "Segoe UI",Arial, Helvetica, sans-serif;
 	color: #515151;
 	line-height: 1.8em;
+	width: 420px;
 	padding: 3px 5px;
 	margin: 0;
 }
+
 .listitem { font:normal 11px "Segoe UI", Arial, Helvetica, sans-serif; color:#515151; line-height:1.8em; padding:3px 5px; margin:0;}
 .body p span { color:#1d8aae; font:normal 14px"Segoe UI", Arial, Helvetica, sans-serif; line-height:1.8em; padding:5px 0; margin:0;}
 .body a { color:#1f92b3; text-decoration:none;}
@@ -66,7 +68,7 @@ html { padding:0; margin:0;}
 	margin-right: 5%;
 }
 .right {
-	width: 450px;
+	width: 445px;
 	margin: 10px 5px 10px 0;
 	padding: 0 10px;
 	float: right;
@@ -143,4 +145,93 @@ div#slideshow { float:left; width:100%; height:314px; }
 	height: 300px;
 	margin-left: 15%;
 
+}
+
+/* pt responsive content divs */
+.body_resize {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* spațiere între coloane */
+}
+
+/* Stil implicit pentru desktop */
+.left {
+  flex: 2;
+    order: 1;
+}
+
+.right {
+  flex: 1;
+  order: 2;
+}
+
+/* Responsive pentru ecrane înguste (sub 768px) */
+@media screen and (max-width: 768px) {
+  .body_resize {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    flex: 100%;
+  }
+
+    .left {
+    order: 2; /* mută .left jos */
+  }
+
+  .right {
+    order: 1; /* mută .right sus */
+  }
+}
+
+
+
+
+  /* pt responsive menu */
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  flex: 1;
+}
+
+.menu {
+  flex: 2;
+}
+
+/* Pe ecrane mici, meniul se mută sub logo dar rămâne pe o linie */
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo,
+  .menu {
+    width: 100%    !important; 
+    padding: 0 !important; 
+  }
+
+  .menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px; /* spațiere între linkuri */
+    padding-left: 0;
+    float: left;
+    margin: 10px 0;
+  }
+
+  .menu ul li {
+    margin: 0;
+  }
+}
+
+.logo a img {
+  display: block;
 }

@@ -3,6 +3,35 @@
 
 <!-- Mirrored from www.alergoclinic.ro/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 May 2025 16:40:26 GMT -->
 <head>
+
+  <style>
+    .body_resize {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .left {
+      flex: 2;
+      order: 1;
+    }
+    .right {
+      flex: 1;
+      order: 2;
+    }
+    @media screen and (max-width: 768px) {
+      .body_resize {
+        flex-direction: column;
+      }
+      .left {
+        order: 1 !important;
+        width: 100%;
+      }
+      .right {
+        order: 2 !important;
+        width: 100%;
+      }
+    }
+</style>
 <title>Consultatii Alergologice Craiova | Dispnee | Prurit| Tuse | AlergoClinic</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta content="tratamente alergii craiova, tratamente alergie craiova, cojunctivita alergica, dermatita alergica, alergie medicamentoasa, alergie polen, alergie praf de casa, alergie mucegai, alergie animale, alergie intepaturi insecte, alergie venin albina" name="keywords" /><meta content="Alergoclinic Craiova asigura consultatii alergologice pentru copii si adulti." name="description" />
@@ -22,21 +51,25 @@
 
     </script>
 <div class="main">
-<div class="header_resize">
-<div class="header">
-<div class="logo"><a href="index.html"><img alt="logo" border="0" height="99" src="images/logo.gif" width="292" /></a></div>
-
-<div class="menu">
-<ul>
-	<li><a href="alergia.html"><span>Alergia</span></a></li>
-	<li><a href="boli-alergice.html"><span>Boli</span></a></li>
-	<li><a href="testare.html"><span>Testare</span></a></li>
-	<li><a href="tratamente.html"><span>Tratament</span></a></li>
-	<li><a href="about.html"><span>Despre</span></a></li>
-	<li><a href="_auto/alergoclinic.html" target="new"><span>Tur</span></a></li>
-	<li><a class="active" href="contact.html"><span>Contact</span></a></li>
-</ul>
-</div>
+  <div class="header_resize">
+    <div class="header">
+      <div class="logo">
+    <a href="index.html"><img src="images/logo.gif" width="292" height="99" border="0" alt="logo" /></a>
+  </div>
+      <div class="menu">
+        <ul>
+          <li><a href="alergia.html"><span>Alergia</span></a></li>
+          <li><a href="boli-alergice.html"><span>Boli</span></a></li>
+          <li><a href="testare.html"><span>Testare</span></a></li>
+          <li><a href="tratamente.html"><span>Tratament</span></a></li>
+      <li><a href="about.html"><span>Despre</span></a></li>
+      <li><a href="_auto/alergoclinic.html" target="new"><span>Tur</span></a></li>
+          <li><a href="contact.html"  class="active"><span>Contact</span></a></li>
+        </ul>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
 
 <div class="clr"></div>
 </div>
@@ -55,21 +88,7 @@
 <div class="body">
 <div class="body_resize box_radius">
 <div class="left">
-<h2>Nu ezitați sa ne contactați</h2>
 
-<p>Clinica de Alergologie şi Imunologie AlergoClinic se afla &icirc;ntr-o locaţie uşor accesibila - in Craiova, pe strada &Icirc;mpăratul Traian (fosta Siloz).</p>
-
-<p>SC Alergoclinic SRL</p>
-
-<p><strong>Cod Unic de Inregistrare:</strong> 35556336</p>
-
-<p><strong>Nr de ordine in Registrul Comertului</strong>: J16/205/2016</p>
-
-<p><strong>Adresa</strong>: &Icirc;mpăratul Traian Nr. 186 Parter, Craiova<br />
-<strong>Tel. / Fax</strong>: 0741 233 533<br />
-<strong>Email</strong>: cristinarusoiu@yahoo.com</p>
-
-<div class="bg"></div>
 
 
 <h2>Program</h2>
@@ -86,11 +105,33 @@
 <p>Marti, Miercuri si Vineri: 9:30 - 14:00</p>
 
 <p>Telefon: 0741 233 533</p>
-<p style="color: white;padding: 15px;background: #bf3345;border-radius: 5px;margin: 10px 0;">Programarile telefonice se vor face la numerele de telefon afisate in intervalul programului de lucru:</p>
+<p style="color: white;padding: 15px;background: #bf3345;border-radius: 5px;margin: 10px 0; width: 380px;">Programarile telefonice se vor face la numerele de telefon afisate in intervalul programului de lucru:</p>
 
 
 <!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/alergoclinic-appointment" style="min-width:320px;height:700px;background-color: white;" ></div>
+<div class="calendly-inline-widget" data-url="https://calendly.com/alergoclinic-appointment/new-meeting?hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
+<style>
+  /* Ascunde complet bannerul și butonul de cookies/settings din widgetul Calendly */
+  .calendly-cookie-banner, .calendly-cookie-settings, .calendly-cookie-settings-button, .calendly-cookie-settings__button {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: none !important;
+  }
+</style>
+<script>
+  // Încearcă să setezi preferința de cookies ca "reject all" pentru Calendly (nu există API public, dar încercăm localStorage)
+  try {
+    localStorage.setItem('calendlyCookieConsent', JSON.stringify({necessary:true, analytics:false, marketing:false, preferences:false, version:2}));
+  } catch(e) {}
+</script>
+<div style="font: normal 13px 'Segoe UI', Arial, Helvetica, sans-serif;  color:#888; margin-bottom:10px;">Notă: Setările de cookies pentru programări au fost setate pe <b>"respinge tot"</b> unde este posibil. Elementele de cookies ale widgetului sunt ascunse pentru confortul dvs.</div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <!-- Calendly inline widget end -->
 <div class="bg"></div>
@@ -98,6 +139,112 @@
 </div>
 
 <div class="right">
+<h2>Harta</h2>
+
+  <!--
+<iframe frameborder="0" height="437" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2854.9879124298823!2d23.81885!3d44.31019899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752d7ac83d25ee7%3A0xb2e4645a9224b8a9!2sAlergoClinic!5e0!3m2!1sro!2sro!4v1409960167271" style="border:0" width="390"></iframe>
+-->
+<!-- Imaginea cu butonul suprapus -->
+<div style="position: relative; display: inline-block; width: 100%; max-width: 390px;">
+  <img src="images/harta-preview.jpg" alt="Harta AlergoClinic" style="width: 100%; border-radius: 8px;">
+
+  <button onclick="openMapPopup()" style="
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1f90b2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    z-index: 2;
+  ">
+    Vezi locatia in Google Maps
+  </button>
+
+  <div style="position:absolute; left:0; right:0; bottom:10px; margin-left:auto; margin-right:auto; width:calc(100% - 20px); background:rgba(243,243,243,0.75); color:#333; padding:10px 14px; border-radius:6px; font-size:13px; text-align:left; box-shadow:0 2px 8px #0001; z-index:2;">
+    <span style="font-weight:500;">* Deschiderea in Google Maps necesita sa accepți folosirea <a href="https://policies.google.com/technologies/cookies" target="_blank" rel="noopener" style="color:#bf3345; text-decoration:underline;"> cookies</a>.</span>
+  </div>
+</div>
+
+<!-- Popup-ul Google Maps -->
+<div id="mapPopup" style="
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+">
+  <div style="position: relative; width: 90%; max-width: 800px; height: 80%;">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2854.9879124298823!2d23.81885!3d44.31019899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752d7ac83d25ee7%3A0xb2e4645a9224b8a9!2sAlergoClinic!5e0!3m2!1sro!2sro!4v1409960167271"
+      width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <button onclick="closeMapPopup()" style="
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: white;
+      color: #333;
+      border: none;
+      padding: 5px 10px;
+      font-size: 14px;
+      border-radius: 3px;
+      cursor: pointer;
+    ">Închide</button>
+  </div>
+</div>
+<script>
+  function openMapPopup() {
+    var popup = document.getElementById('mapPopup');
+    popup.style.display = 'flex';
+    // Adaugă event pentru click în afara zonei popup
+    setTimeout(function() {
+      popup.addEventListener('mousedown', outsideMapPopupClick);
+      document.addEventListener('keydown', escMapPopupClose);
+    }, 10);
+  }
+  function closeMapPopup() {
+    var popup = document.getElementById('mapPopup');
+    popup.style.display = 'none';
+    popup.removeEventListener('mousedown', outsideMapPopupClick);
+    document.removeEventListener('keydown', escMapPopupClose);
+  }
+  function outsideMapPopupClick(e) {
+    var popupContent = document.querySelector('#mapPopup > div');
+    if (e.target === document.getElementById('mapPopup')) {
+      closeMapPopup();
+    }
+  }
+  function escMapPopupClose(e) {
+    if (e.key === 'Escape') {
+      closeMapPopup();
+    }
+  }
+</script>
+
+<h2>Nu ezitați sa ne contactați</h2>
+
+<p>Clinica de Alergologie şi Imunologie AlergoClinic se afla &icirc;ntr-o locaţie uşor accesibila - in Craiova, pe strada &Icirc;mpăratul Traian (fosta Siloz).</p>
+
+<p>SC Alergoclinic SRL</p>
+
+<p><strong>Cod Unic de Inregistrare:</strong> 35556336</p>
+
+<p><strong>Nr de ordine in Registrul Comertului</strong>: J16/205/2016</p>
+
+<p><strong>Adresa</strong>: &Icirc;mpăratul Traian Nr. 186 Parter, Craiova<br />
+<strong>Tel. / Fax</strong>: 0741 233 533<br />
+<strong>Email</strong>: cristinarusoiu@yahoo.com</p>
+
+<div class="bg"></div>
 <h2>Medici</h2>
 
 <p>Dr. Oprica - Rusoiu Cristina a &icirc;nființat Clinica de Alergologie şi Imunologie AlergoClinic Craiova din dorinţa de a asigura cele mai bune condiţii de diagnostic şi tratament pacienților suferinzi de boli alergice.</p>
@@ -107,51 +254,51 @@
 <h2>Biografie</h2>
 
 <ul>
-	<li>
-	<p>Specializare: Medic primar &quot;Alergologie şi Imunologie Clinică&quot; cu training efectuat la Spit. Nicolae Malaxa, București secția de &quot;Alergologie&quot;, promoția 2004;</p>
-	</li>
-	<li>
-	<p>Membru al Asociațiilor Profesionale:</p>
+  <li>
+  <p>Specializare: Medic primar &quot;Alergologie şi Imunologie Clinică&quot; cu training efectuat la Spit. Nicolae Malaxa, București secția de &quot;Alergologie&quot;, promoția 2004;</p>
+  </li>
+  <li>
+  <p>Membru al Asociațiilor Profesionale:</p>
 
-	<ul>
-		<li>
-		<p>SRAIC - Societatea Rom&acirc;nă de Alergologie şi Imunologie Clinică</p>
-		</li>
-		<li>
-		<p>EAACI - Academia Europeană de Alergologie şi Imunologie Clinică</p>
-		</li>
-		<li>
-		<p>ERS - Societatea Europeană de Boli Respiratorii</p>
-		</li>
-		<li>
-		<p>UCB - Institutul de Alergie</p>
-		</li>
-	</ul>
-	</li>
-	<li>
-	<p>Cursuri postuniversitare urmate:</p>
+  <ul>
+    <li>
+    <p>SRAIC - Societatea Rom&acirc;nă de Alergologie şi Imunologie Clinică</p>
+    </li>
+    <li>
+    <p>EAACI - Academia Europeană de Alergologie şi Imunologie Clinică</p>
+    </li>
+    <li>
+    <p>ERS - Societatea Europeană de Boli Respiratorii</p>
+    </li>
+    <li>
+    <p>UCB - Institutul de Alergie</p>
+    </li>
+  </ul>
+  </li>
+  <li>
+  <p>Cursuri postuniversitare urmate:</p>
 
-	<ul>
-		<li>
-		<p>Reacţii alergice post-medicamentoase - Aspecte practice de diagnostic şi tratament</p>
-		</li>
-		<li>
-		<p>Evaluarea interdisciplinara a pacientului cu urticarie</p>
-		</li>
-		<li>
-		<p>Evaluarea pacientului cu dermatita atopica</p>
-		</li>
-		<li>
-		<p>Noi opţiuni terapeutice in astmul bronșic pediatric</p>
-		</li>
-		<li>
-		<p>Diagnostic şi tratament in mastocitoză şi anafilaxie</p>
-		</li>
-	</ul>
-	</li>
-	<li>
-	<p>Activități științifice: Participări la Congrese Naționale şi Internaționale de Alergologie şi Imunologie Clinică, Pneumologie, Alergologie şi Imunologie Pediatrică.</p>
-	</li>
+  <ul>
+    <li>
+    <p>Reacţii alergice post-medicamentoase - Aspecte practice de diagnostic şi tratament</p>
+    </li>
+    <li>
+    <p>Evaluarea interdisciplinara a pacientului cu urticarie</p>
+    </li>
+    <li>
+    <p>Evaluarea pacientului cu dermatita atopica</p>
+    </li>
+    <li>
+    <p>Noi opţiuni terapeutice in astmul bronșic pediatric</p>
+    </li>
+    <li>
+    <p>Diagnostic şi tratament in mastocitoză şi anafilaxie</p>
+    </li>
+  </ul>
+  </li>
+  <li>
+  <p>Activități științifice: Participări la Congrese Naționale şi Internaționale de Alergologie şi Imunologie Clinică, Pneumologie, Alergologie şi Imunologie Pediatrică.</p>
+  </li>
 </ul>
 
 <p></p>
@@ -161,11 +308,8 @@
 <p>Plata se poate efectua si cu ajutorul cardului.</p>
 
 <p>In cazul platii cu un card de credit &quot;Start&quot; de la Banca Transilvania beneficiati de plata in rata sau puncte</p>
-<h2>Harta</h2>
-<iframe frameborder="0" height="437" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2854.9879124298823!2d23.81885!3d44.31019899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4752d7ac83d25ee7%3A0xb2e4645a9224b8a9!2sAlergoClinic!5e0!3m2!1sro!2sro!4v1409960167271" style="border:0" width="390"></iframe>
 
-<div id="map_canvas"></div>
-</div>
+
 
 <div class="clr"></div>
 </div>
